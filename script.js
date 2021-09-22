@@ -10,7 +10,7 @@ function convert() {
         dataType: 'json',
         success: function(content) {
             result = (content.conversion_rates[selectedTwo] * amount).toFixed(2) + " " + selectedTwo ;
-            document.getElementById('result').value = result;
+            $('#result').value = result;
         }
     });
 }
